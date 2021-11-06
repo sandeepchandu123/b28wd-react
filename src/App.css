@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.user-pic{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
 }
+
+
+/* .movie-container {
+  background-color: crimson;
+  width:340px;
+  
+} */
