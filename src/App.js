@@ -1,5 +1,6 @@
-
 import './App.css';
+import { Movielist } from './Movielist';
+
 export default function App() {
   console.log("Hi");
   // const names=["sandeep", "sandy", "sanju"]///
@@ -61,61 +62,22 @@ const movies=[
   
   return (
     <div className="App">
-      {/* {users.map((ur)=>(
+      {/* {/* {users.map((ur)=>(
          <Psg name={ur.name} pic={ur.pic}/>))} */}
-         <section className="movie-list">
+         {/* <section className="movie-list">
       
-         {movies.map((mv)=> (
-         <Movie name={mv.name}
-          rating={mv.rating}
-           summery={mv.summery}
-          poster={mv.poster} />
+         {movies.map(({name,rating,summery,poster})=> (
+         <Movie name={name}
+          rating={rating}
+           summery={summery}
+          poster={poster} />
          
     
   )
 )}
-</section>
+</section> */} 
+ <Movielist movies={movies}/> 
+{/* <Counter /> */}
 </div>
   );
-         }
-        
-function Movie({name,rating,summery,poster}){
-  return (<div className="movie-container">
-    <img src={poster}
-     alt={name}
-    className="movie-poster"
-    />
-    <div className="movie-speces">
-    <h3 className="movie-name">{name}</h3>
-    <p className="movie-rating"> ⭐{rating}</p>
-    </div>
-    <p className="movie-summery">{summery}</p>
-  </div>
-  
-  
-  );
-  }
-  
-
-
-
-// // function Psg(props)///
-// //   // const name="sandeep"
-// //   console.log(props)
-// //   return(
-// //     <div>
-// //       <h1>{props.name}😍</h1>
-// //       </div>
-// //   );
-// // }
-
-// function Psg({name,pic}) {
-//   // const name="sandeep"
- 
-//   return(
-//     <div>
-//       <img className="user-pic" src={pic} alt={name}/>
-//       <h1 className="user-name">{name}😍🙄🙄🙄</h1>
-//       </div>
-//   );
-//   }
+}
